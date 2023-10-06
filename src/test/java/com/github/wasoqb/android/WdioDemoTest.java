@@ -24,6 +24,7 @@ public class WdioDemoTest {
         options.setApp (Path.of (getProperty ("user.dir"), "src/test/resources/wdio-demo.apk")
                 .toString ())
             .setDeviceName ("Pixel 7 Pro")
+            .setPlatformVersion ("11.0")
             .setAvd ("Pixel_7_Pro")
             .setAppWaitActivity ("com.wdiodemoapp.MainActivity")
             .setCapability ("appium:settings[ignoreUnimportantViews]", true);
