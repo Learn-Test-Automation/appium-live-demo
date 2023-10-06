@@ -1,4 +1,4 @@
-package com.github.wasoqb.page;
+package com.github.wasoqb.page.android;
 
 import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.androidUIAutomator;

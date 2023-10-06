@@ -1,4 +1,4 @@
-package com.github.wasoqb;
+package com.github.wasoqb.android;
 
 import static java.lang.System.getProperty;
 import static java.time.Duration.ofSeconds;
@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Path;
 
-import com.github.wasoqb.page.SignUpPage;
+import com.github.wasoqb.page.android.SignUpPage;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.testng.annotations.AfterClass;
@@ -31,7 +31,7 @@ public class WdioDemoTest {
         this.driver = new AndroidDriver (new URL ("http://localhost:4723/"), options);
         this.driver.manage ()
             .timeouts ()
-            .implicitlyWait (ofSeconds (5));
+            .implicitlyWait (ofSeconds (1));
     }
 
     @AfterClass
